@@ -1,0 +1,268 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
+  background: #0e1212;
+}
+
+section{
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  color: #682AE9;
+
+
+}
+
+section:nth-child(1){
+  color: #fff1;
+  background-color: gray;
+
+
+}
+
+section:nth-child(2){
+  color: #fff;
+
+}
+
+section:nth-child(3){
+  color: #fff;
+
+}
+
+section:nth-child(4){
+  color: #1D212B;
+  background: #fff
+}
+section:nth-child(5){
+  color: #1D212B;
+  position:relative;
+  width: 100%
+  height:100vh;
+  background: #333;
+}
+
+
+
+section .container{
+  margin: 100px;
+}
+
+section h1{
+  font-size: 60px;
+}
+
+section h2{
+  font-size: 40px;
+  text-align: center;
+  color: #682AE9;
+  text-transform: uppercase;
+}
+
+section .cards{
+  color: #455a64;
+  display: flex;
+  margin-left: 60px;
+}
+
+section .cards .text-card{
+  background: #2696E9;
+  margin: 20px;
+  padding: 20px;
+}
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.ul
+{
+	list-style-type: none;
+	position: fixed;
+ margin-left: 22px;
+ margin-top: -13px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 10px
+
+}
+
+li a {
+  display: block;
+  color: white;
+  
+  text-decoration: none;
+
+}
+
+li a.active {
+  color: gray;
+}
+li a:hover:not(.active) {
+  transform: scale(1.3);
+  color: #455a64;
+}
+
+
+.nav div {
+    height: 1px;
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+
+
+}
+.nav {
+    width: 50px;
+    display: block;
+    margin: 0.9em 0 0 0.9em;
+    position:fixed;
+
+
+}
+.one {
+    width: 30px;
+
+}
+.two {
+    width: 20px;
+}
+.three {
+    width: 25px;
+}
+.four {
+  width:20px;
+}
+
+.nav:hover div {
+    width: 30px;
+
+}
+
+
+/* info*/
+.info{
+  text-align: center;
+
+  
+}
+
+/*hover info*/
+.hide {
+  display: none;
+}
+.infohov:hover + .hide {
+  display: block;
+
+  position: centre;
+}
+/*  Button 
+.button{
+  
+  background: #CCC;
+opacity: 0.6;
+
+}
+.pop {
+  display: none:  ;
+}
+.navbar:hover + .pop {
+  display: block;
+  color: #fff
+
+
+}
+*/
+
+
+
+
+  .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* drop down navbar*/
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: transparent;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+ 
